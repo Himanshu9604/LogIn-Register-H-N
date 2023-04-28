@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Child from './Child/Child';
+// import LogIn from './LogIn/LogIn';
+// import Register from './Register/Register';
+function getData() {
+  alert('hi');
+}
+function getData2() {
+  alert('hi2');
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Register/>
+     <LogIn/> */}
+        <Child  data={getData}
+        data2={getData2}  />
+       
+         
     </div>
   );
 }
